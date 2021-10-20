@@ -88,4 +88,70 @@ body {
 }
 
 @media screen and (min-width: 375px) {
+  body {
+    margin-top: 3rem;
+  }
+
+  .entire-component {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.8fr;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    grid-template-areas:
+      "main-area review-area"
+      "bottom-area bottom-area";
+
+    .main {
+      grid-area: main-area;
+      text-align: left;
+      .main-heading {
+        width: 60%;
+        h2 {
+          font-size: 2.5rem;
+        }
+      }
+      .main-para {
+        width: 70%;
+        p {
+          line-height: 1.5rem;
+        }
+      }
+    }
+
+    .reviews {
+      grid-area: review-area;
+
+      .reviews-ind {
+        height: 50px;
+        width: 500px;
+        flex-direction: row;
+        border-radius: 8px;
+      }
+
+      .reviews-ind:nth-child(2) {
+        margin-left: 2rem;
+      }
+      .reviews-ind:nth-child(3) {
+        margin-left: 4rem;
+      }
+    }
+
+    .articles {
+      grid-area: bottom-area;
+      flex-direction: row;
+      gap: 2rem;
+
+      .ind-article:nth-child(2) {
+        margin-top: 1rem;
+        margin-bottom: -1rem;
+      }
+
+      .ind-article:nth-child(3) {
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+      }
+    }
+  }
 }
