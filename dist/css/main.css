@@ -5,4 +5,130 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  margin: 0 5%;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 2rem;
+  background-color: white;
+}
+
+.entire-component {
+  margin-bottom: 2rem;
+}
+
+.entire-component .main {
+  text-align: center;
+  color: #502050;
+  margin-bottom: 2rem;
+}
+
+.entire-component .main .main-heading h2 {
+  margin-bottom: 1rem;
+}
+
+.entire-component .reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.entire-component .reviews .reviews-ind {
+  background-color: #f7f2f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 80px;
+}
+
+.entire-component .reviews .reviews-ind .review-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.2rem;
+}
+
+.entire-component .reviews .reviews-ind figcaption p {
+  font-weight: 700;
+  color: #502050;
+}
+
+.entire-component .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.entire-component .articles .ind-article {
+  background-color: #502050;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.entire-component .articles .ind-article .article-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.entire-component .articles .ind-article .article-header figure img {
+  border-radius: 50%;
+  height: 50%;
+}
+
+.entire-component .articles .ind-article .article-header .article-header-title {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.entire-component .articles .ind-article .article-header .article-header-title p:first-of-type {
+  color: white;
+  font-weight: 700;
+}
+
+.entire-component .articles .ind-article .article-header .article-header-title p:last-of-type {
+  color: #ee68a4;
+  font-weight: 500;
+}
+
+.entire-component .articles .ind-article .article-body {
+  height: 100%;
+  margin-top: -1rem;
+}
+
+.entire-component .articles .ind-article .article-body p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
 /*# sourceMappingURL=main.css.map */
